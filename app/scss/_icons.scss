@@ -1,0 +1,77 @@
+.icon {
+  display: inline-block;
+  &.example-png-icon {
+    background: url(img/icons/example.png);
+    width: 30px;
+    height: 30px;
+  }
+  &-example-svg-icon {
+    width: 30px;
+    height: 30px;
+    fill: red;
+  }
+  &-main-logo {
+    width: 96px;
+    height: 45px;
+    fill: #ffffff;
+  }
+  &-phone {
+    width: 16px;
+    height: 16px;
+    fill: #97CC35;
+  }
+  &-smile {
+    width: 28px;
+    height: 28px;
+    fill: #599B19;
+  }
+  &-main-adv {
+    width: 102px;
+    height: 120px;
+    fill: #ffffff;
+  }
+  &-check-adv {
+    width: 29px;
+    height: 21px;
+    fill: #66B161;
+    stroke: #66B161;
+    stroke-width: 2px;
+  }
+  &-close-adv {
+    width: 21px;
+    height: 21px;
+    fill: #66B161;
+    stroke: #66B161;
+    stroke-width: 1px;
+  }
+  &-return-adv {
+    width: 24px;
+    height: 24px;
+    fill: #66B161;
+    stroke-width: 2px;
+  }
+  &-commas {
+    width: 65px;
+    height: 52px;
+    fill: #EFEFEF;
+  }
+  &-vk {
+    width: 35px;
+    height: 20px;
+  }
+  &-ig {
+    width: 20px;
+    height: 20px;
+  }
+  &-fb {
+    width: 12px;
+    height: 20px;
+  }
+  &-slider-arrow {
+    width: 18px;
+    height: 18px;
+    fill: #000000;
+    transition: 0.4s;
+    // transition: 0.2s;
+  }
+}

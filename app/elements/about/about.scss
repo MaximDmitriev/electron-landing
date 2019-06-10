@@ -1,0 +1,118 @@
+.about {
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  padding: 0 0 50px 0;
+  &__title {
+    align-self: flex-start;
+    margin-bottom: 30px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__desc {
+    // font-weight: 500;
+    line-height: 24px;
+    color: $text-color;
+    padding: 0 57px 0 0;
+    width: 560px;
+    flex-shrink: 0;
+  }
+  &__desc-item{
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__devider {
+    position: relative;
+    width: 6px;
+    height: 272px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04);
+    border-radius: 50px;
+  }
+  &__devider-point {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border: 3px solid #FD900A;
+    border-radius: 50%;
+    background: #FFFFFF;
+    &:nth-child(2) {
+      bottom: 90px;
+    }
+    &:nth-child(3) {
+      bottom: 180px;
+    }
+    &_fat {
+      width: 20px;
+      height: 20px;
+      border: 4px solid #FD900A;
+      top: 0;
+    }
+  }
+  &__missions {
+    padding-left: 35px;
+  }
+  &__missions-title {
+    margin: 25px 0;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 31px;
+    color: $text-color;
+  }
+  &__missions-item {
+    // font-weight: 500;
+    line-height: 24px;
+    color: $text-color;
+    margin-top: 12px;
+
+  }
+  &__quote {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  &__quote-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 667px;
+    height: 132px;
+    padding: 30px 54px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    border-radius: 20px 20px 20px 105px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04);
+    background: #FFFFFF;
+    line-height: 24px;
+    color: $text-color;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 65px;
+      height: 52px;
+      left: -95px;
+      top: -30px;
+      background: url('../about/img/comma.svg') no-repeat center;
+      background-size: cover;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      width: 65px;
+      height: 52px;
+      right: -95px;
+      bottom: -30px;
+      background: url('../about/img/comma.svg') no-repeat center;
+      background-size: cover;
+      transform: rotateZ(180deg);
+    }
+  }
+}

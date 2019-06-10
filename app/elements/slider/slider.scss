@@ -1,0 +1,115 @@
+.slider {
+  padding: 40px 0;
+  &__wrap {
+    align-items: center;
+    position: relative;
+  }
+  &__subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #BFBFBF;
+  }
+  &__container {
+    width: 100%;
+    margin-top: 30px;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px 0 40px 0;
+  }
+  &__img {
+    flex-shrink: 0;
+    height: 500px;
+    border-radius: 20px 20px 20px 105px;
+    border: 10px solid #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  &__pagination {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    left: 0;
+    bottom: 5px !important;
+  }
+  &__bullet {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #DCDCDC;
+    border-radius: 50%;
+    flex-shrink: 0;
+    &:not(:last-child) {
+      margin-right: 7px;
+    }
+    &_active {
+      border: none;
+      background: linear-gradient(71.72deg, #97CC35 12.41%, #66B161 87.59%);
+      box-shadow: 1px 5px 5px rgba(102, 177, 97, 0.2);
+    }
+  }
+  &__nav {
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__preview-wrapper {
+    position: absolute;
+    z-index: 10;
+    top: 40px;
+    right: 65px;
+  }
+  &__preview-item {
+    position: absolute;
+    height: 170px;
+    width: 150px;
+    perspective: 400px;
+    perspective-origin: left center;
+    &_lower {
+      top: 0;
+      right: 0;
+      img {
+        filter: blur(3px);
+      }
+    }
+    &_middle {
+      top: 20px;
+      right: 30px;
+      img {
+        filter: blur(1px);
+      }
+    }
+    &_up {
+      top: 40px;
+      right: 60px;
+    }
+  }
+  &__preview-content {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 15px 65px;
+    border: 7px solid #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    transform: rotateY(-30deg);
+    transform-origin: left;
+  }
+  &__preview-img {
+    object-fit: fill;
+    object-position: -50px center;
+    max-width: 280px;
+    &_bottom {
+      object-position: -50px -80px;
+    }
+    &_right {
+      object-position: -100px center;
+    }
+  }
+}

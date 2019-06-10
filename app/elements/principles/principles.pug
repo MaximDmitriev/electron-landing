@@ -1,0 +1,53 @@
+.principles.section
+  ._wrap.wrap
+    ._content
+      h2._title.section__title.section__title_green Принципы преподавания
+      ._slider-title
+        .swiper-container(data-slider="princs-title")
+          .swiper-wrapper
+            .swiper-slide.principles__slide-title-wrap
+              .principles__slide-title #1 — Принцип Парето
+            .swiper-slide.principles__slide-title-wrap
+              .principles__slide-title #2— Наглядность
+            .swiper-slide.principles__slide-title-wrap
+              .principles__slide-title #3— Один урок – одна тема
+        .swiper-button-prev.slider__prev.slider__prev_principles
+          +svg('slider-arrow')
+        .swiper-button-next.slider__next.slider__next_principles
+          +svg('slider-arrow', 'rotate180')
+      .principles__desc-slider
+        .swiper-container(data-slider="princs-desc")
+          .swiper-wrapper
+            .swiper-slide
+              .principles__desc-slide
+                .principles__desc-title Принцип Парето
+                .principles__desc-text.
+                  80% содержания каждого занятия – практика. Каждый ученик работает
+                  над собственным проектом за индивидуальным оборудованием (ноутбук и 
+                  робоплатформа).
+            .swiper-slide
+              .principles__desc-slide
+                .principles__desc-title Наглядность
+                .principles__desc-text.
+                  Все занятия в Роббо Клубе сопровождаются наглядной демонстрацией работы 
+                  устройств – робоплатформ, электрических цепей, датчиков и т.д. Дети работают 
+                  на специально спроектированном в деревянном корпусе открытом 3D-принтере 
+                  и могут наблюдать, как внутри него создаются объекты
+            .swiper-slide
+              .principles__desc-slide
+                .principles__desc-title Один урок – одна тема
+                .principles__desc-text.
+                  Каждое занятие проходит по четкому продуманному плану и посвящено детальному 
+                  изучению отдельной темы. Результат – максимальное усвоение пройденного материала.
+    ._slider-main
+      .swiper-container(data-slider="princs-main")
+        .swiper-wrapper
+          .swiper-slide
+            .principles__slide-main
+              img(src="img/pareto.svg", alt="pareto").principles__img
+          .swiper-slide
+            .principles__slide-main
+              img(src="img/simple.svg", alt="pareto").principles__img
+          .swiper-slide
+            .principles__slide-main
+              img(src="img/visualization.svg", alt="pareto").principles__img
