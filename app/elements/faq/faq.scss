@@ -83,4 +83,18 @@
     transition: 0.4s;
     opacity: 0;
   }
+  &__list-string {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      margin: 0 16px 4px 0;
+      width: 4px;
+      height: 4px;
+      background: $text-color;
+      border-radius: 50%;
+    }
+  }
 }
