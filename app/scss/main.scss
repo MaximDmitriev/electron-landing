@@ -44,6 +44,12 @@ button {
   }
 }
 
+input {
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -144,3 +150,4 @@ button {
 @import "../elements/feedback/feedback";
 @import "../elements/partners/partners";
 @import "../elements/mainform/mainform";
+@import "../elements/footer/footer";
