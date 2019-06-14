@@ -1,0 +1,24 @@
+.mainform.section
+  ._wrap.wrap
+    ._content
+      h2._title.section__title.section__title_orange Мы рассказали вам всю <br>правду в глаза!
+      ._desc.
+        Мы не написали “акция/скидки и тому подобное” так как это обычный маркетинговый ход. 
+      ._text.
+        Если наш подход вам понравился, просто заполните эту форму и мы с радостью перезвоним вам в ближайшее время.
+    ._form
+      h3._subtitle Оставьте заявку
+      ._form-note.
+          Пожалуйста, заполните форму, <br>и наш менеджер с Вами свяжется
+      label(for="mainform-name")._form-label
+        input(type="text" placeholder="Ваше имя")._form-input#mainform-name
+        +svg('man', 'mainform__form-svg')
+      label(for="mainform-phone")._form-label
+        input(type="text" placeholder="+7(999)111-22-33")._form-input#mainform-phone
+        +svg('phone-call', 'mainform__form-svg')
+      label(for="mainform-check")._checkbox
+        input(type="checkbox" name="mainform-check" checked)._checkbox-real#mainform-check
+        ._checkbox-fake
+            +svg('checked', 'mainform__check-svg')
+        ._checkbox-text Согласие на обработку персональных данных
+      button._btn Получить консультацию

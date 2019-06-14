@@ -1,0 +1,20 @@
+.partners {
+  padding: 55px 0 40px 0;
+  &__wrap {
+    align-items: center;
+  }
+  &__container {
+    width: 100%;
+    padding: 67px 0 60px 0;
+  }
+  &__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: 0.4s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

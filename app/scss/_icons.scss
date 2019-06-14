@@ -74,4 +74,19 @@
     transition: 0.4s;
     // transition: 0.2s;
   }
+  &-phone-call {
+    width: 20px;
+    height: 20px;
+    fill:#8f8f8f;
+  }
+  &-man {
+    width: 17px;
+    height: 20px;
+    fill: #8f8f8f;
+  }
+  &-checked {
+    width: 12px;
+    height: 8px;
+    fill :#333333;
+  }
 }

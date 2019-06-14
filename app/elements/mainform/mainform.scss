@@ -1,0 +1,137 @@
+.mainform {
+  padding: 40px 0;
+  &__wrap {
+    flex-direction: row;
+  }
+  &__title {
+    text-align: left;
+    line-height: 44px;
+  }
+  &__desc {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  &__text {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 34px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 434px;
+    margin: 0 150px 0 100px;
+    padding: 45px 0;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04);
+    border-radius: 20px 20px 20px 105px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+  }
+  &__subtitle {
+    font-weight: 900;
+    font-size: 28px;
+  }
+  &__form-note {
+    margin: 6px 0 13px 0;
+    font-weight: 300;
+    font-size: 14px;
+    color: #737373;
+    text-align: center;
+  }
+  &__form-label {
+    display: flex;
+    flex-shrink: 0;
+    padding: 0 20px;
+    position: relative;
+    width: 354px;
+    height: 40px;
+    border: 2px solid #EAEAEA;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin-top: 17px;
+    &:hover {
+      border-color: #97CC35;
+      .mainform__form-svg {
+        fill: #97CC35;
+      }
+    }
+  }
+  &__form-input {
+    width: 90%;
+    border: none;
+    &:focus {
+      .mainform__form-label {
+        border-color: #97CC35;
+      }
+      +.mainform__form-svg {
+        fill: #97CC35;
+      }
+    }
+  }
+  &__form-svg {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    transition: 0.2s;
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  &__checkbox-real {
+    display: none;
+    &:checked {
+      +.mainform__checkbox-fake {
+        .mainform__check-svg{
+          fill: #000000;
+        }
+      }
+    }
+  }
+  &__checkbox-fake {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  &__checkbox-text {
+    margin: 0 5px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #737373;
+  }
+  &__check-svg {
+    fill: #ffffff;
+  }
+  &__btn {
+    margin-top: 30px;
+    width: 270px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #97CC35 ;
+    transition: 0.2s;
+    border-radius: 18px 18px 18px 105px;
+    color: #97CC35;
+    line-height: 21px;
+    cursor: pointer;
+    &:hover {
+      color: #FFFFFF;
+      background: #97CC35;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
