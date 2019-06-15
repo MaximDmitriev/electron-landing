@@ -9,6 +9,7 @@
 }
 
 body {
+  // position: relative;
   font-family: $base-font;
   font-size: $base-font-size;
   min-width: 320px;
@@ -151,3 +152,4 @@ input {
 @import "../elements/partners/partners";
 @import "../elements/mainform/mainform";
 @import "../elements/footer/footer";
+@import "../elements/modals/modals";

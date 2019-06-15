@@ -1,6 +1,3 @@
-// $('document').ready(function () {
-//     //=require ../elements/**/*.js
-// });
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', function () {
     //=require ../elements/**/*.js
 });
