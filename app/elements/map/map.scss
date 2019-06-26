@@ -62,6 +62,9 @@
     overflow: hidden;
     transition: 0.6s;
     opacity: 0;
+    @media(max-width: 1199px) {
+      width: 910px;
+    }
     ///
     img {
       width: 100%;

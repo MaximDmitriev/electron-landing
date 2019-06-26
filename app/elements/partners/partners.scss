@@ -17,4 +17,18 @@
       opacity: 1;
     }
   }
+  &__nav {
+    display: none;
+    justify-content: center;
+    width: 100%;
+    .slider__next {
+      margin-left: 60px;
+    }
+    .slider__prev {
+      margin-right: 60px;
+    }
+    @media(max-width: 1199px) {
+      display: flex;
+    }
+  }
 }

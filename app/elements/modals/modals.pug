@@ -4,7 +4,7 @@
       .swiper-container(data-slider="modals")
         .swiper-wrapper
           .swiper-slide.modals__slide
-            .modals__card
+            .modals__card(data-key="progs")
               .modals__close-btn
                 +svg('return-adv', 'modals__close-svg')
               .modals__desc
@@ -83,7 +83,7 @@
                     .modals__result-text Работать в команде
               button.modals__btn Записаться на пробный урок
           .swiper-slide.modals__slide
-            .modals__card
+            .modals__card(data-key="3d")
               .modals__close-btn
                 +svg('return-adv', 'modals__close-svg')
               .modals__desc
@@ -157,7 +157,7 @@
                     .modals__result-text Работать в команде
               button.modals__btn Записаться на пробный урок
           .swiper-slide.modals__slide
-            .modals__card
+            .modals__card(data-key="electro")
               .modals__close-btn
                 +svg('return-adv', 'modals__close-svg')
               .modals__desc
@@ -236,7 +236,7 @@
                     .modals__result-text Работать в команде
               button.modals__btn Записаться на пробный урок
           .swiper-slide.modals__slide
-            .modals__card
+            .modals__card(data-key="IoT")
               .modals__close-btn
                 +svg('return-adv', 'modals__close-svg')
               .modals__desc
@@ -311,5 +311,10 @@
                     .modals__result-circle 4
                     .modals__result-text Работать в команде
               button.modals__btn Записаться на пробный урок
+        .modals__navigation
+          .modals__prev-btn
+            +svg('modals-arrow', 'modals__svg')
+          .modals__next-btn
+            +svg('modals-arrow', 'modals__svg modals__svg_next')
 
 

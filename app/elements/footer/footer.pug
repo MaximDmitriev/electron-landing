@@ -1,27 +1,26 @@
 footer.footer.section
   ._wrap.wrap
     +svg('main-logo', 'footer__logo-svg')
-    ._nav
+    nav._nav
       ._nav-col
-        ._nav-link О нас
-        ._nav-link Отзывы
-        ._nav-link Курсы
+        a(href="#" data-link="about")._nav-link О нас
+        a(href="#" data-link="feedback")._nav-link Отзывы
+        a(href="#" data-link="program")._nav-link Курсы
       ._nav-col
-        ._nav-link FAQ
-        ._nav-link Результаты
-        ._nav-link Контакты
+        a(href="#" data-link="faq")._nav-link FAQ
+        a(href="#" data-link="results")._nav-link Результаты
+        a(href="#" data-link="contacts")._nav-link Контакты
       ._nav-col
-        ._nav-link Преподаватели
-        ._nav-link Преподавания
-        ._nav-link Наша жизнь
+        a(href="#" data-link="prepod")._nav-link Преподавания
+        a(href="#" data-link="life")._nav-link Наша жизнь
     ._contacts
       ._callback
         a(href="tel:+79771779417")._callback-phone +7 (937) 470-09-12
         ._callback-text перезвоните мне
       ._social-block
         a(href="#")._social-link
-          +svg('fb')
+          +svg('fb', 'footer__social-svg')
         a(href="#")._social-link
-          +svg('ig')
+          +svg('ig', 'footer__social-svg')
         a(href="#")._social-link
-          +svg('vk')
+          +svg('vk', 'footer__social-svg')

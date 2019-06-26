@@ -9,6 +9,7 @@ const mainSliderUp = new Swiper(document.querySelector('.swiper-container[data-s
 
 const mainSlider = new Swiper(document.querySelector('.swiper-container[data-slider="main"]'), {
   slidesPerView: 1,
+  spaceBetween: 40,
   loop: true,
   pagination: {
     el: '.slider__pagination',

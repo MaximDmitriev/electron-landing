@@ -74,8 +74,6 @@
     width: 18px;
     height: 18px;
     fill: #000000;
-    transition: 0.4s;
-    // transition: 0.2s;
   }
   &-phone-call {
     width: 20px;
@@ -91,5 +89,10 @@
     width: 12px;
     height: 8px;
     fill :#333333;
+  }
+  &-modals-arrow {
+    width: 27px;
+    height: 54px;
+    fill: none;
   }
 }

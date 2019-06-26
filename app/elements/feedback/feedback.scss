@@ -6,12 +6,15 @@
   &__container {
     width: 100%;
     padding: 40px 0;
+    // @media(max-width: 1199px) {
+    //   width: 90%;
+    // }
   }
   &__slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 0 70px;
+
   }
   &__avatar {
     // object-fit: contain;
@@ -50,6 +53,9 @@
       top: -30px;
       background: url('../about/img/comma.svg') no-repeat center;
       background-size: cover;
+      @media(max-width: 1199px) {
+        display: none;
+      }
     }
     &::after {
       content: '';
@@ -61,6 +67,12 @@
       background: url('../about/img/comma.svg') no-repeat center;
       background-size: cover;
       transform: rotateZ(180deg);
+      @media(max-width: 1199px) {
+        display: none;
+      }
+    }
+    @media(max-width: 1199px) {
+      width: 880px;
     }
   }
   &__text {

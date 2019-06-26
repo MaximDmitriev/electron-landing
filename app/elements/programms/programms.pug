@@ -1,4 +1,4 @@
-.programms.section
+.programms.section(data-link="program")
   h2._title.section__title.section__title_orange Чему обучают в Роббо Клубе?
   ._wrap.wrap
     .swiper-container(data-slider="progs")
@@ -10,7 +10,7 @@
             h3.programms__card-title Программирование <br>и робототехника
             .programms__card-text.
               Развиваем математическое мышление, расширяем представления об ...
-            button.programms__card-button Посмотреть подробнее
+            button.programms__card-button(data-key="progs") Посмотреть подробнее
         .swiper-slide.programms__slide
           .programms__card
             .programms__card-view
@@ -18,7 +18,7 @@
             h3.programms__card-title 3D-моделирование <br>и 3D-печать
             .programms__card-text.
               Учим придумывать дизайн предметов и воплощать дизайнерские проекты ...
-            button.programms__card-button Посмотреть подробнее
+            button.programms__card-button(data-key="3d") Посмотреть подробнее
         .swiper-slide.programms__slide
           .programms__card
             .programms__card-view
@@ -26,7 +26,7 @@
             h3.programms__card-title Виртуальный <br>Умный дом
             .programms__card-text.
               Знакомим детей с понятием Умный дом, обучаем принципам программ...
-            button.programms__card-button Посмотреть подробнее
+            button.programms__card-button(data-key="IoT") Посмотреть подробнее
         .swiper-slide.programms__slide
           .programms__card
             .programms__card-view
@@ -34,7 +34,7 @@
             h3.programms__card-title Схемотехника и <br>микроэлектроника
             .programms__card-text.
               На практике изучаем действие физических законов электричества ...
-            button.programms__card-button Посмотреть подробнее
+            button.programms__card-button(data-key="electro") Посмотреть подробнее
     .swiper-button-prev.slider__prev.slider__prev_progs
       +svg('slider-arrow')
     .swiper-button-next.slider__next.slider__next_progs

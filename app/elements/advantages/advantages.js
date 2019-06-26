@@ -28,7 +28,7 @@ const closePopups = () => {
   });
 };
 
-closePopups();
+// closePopups();
 
 advInners.forEach((item, i) => {
   item.addEventListener('click', () => {
@@ -45,6 +45,7 @@ advInners.forEach((item, i) => {
   });
 });
 
+advInners[1].click();
 
 const popupScroll = document.querySelectorAll('.advantages__popup-text');
 
@@ -55,3 +56,6 @@ popupScroll.forEach((item) => {
 
 });
 
+// document.body.addEventListener('click', (e) => {
+//     console.log(e.target);
+// });

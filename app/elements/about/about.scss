@@ -17,6 +17,9 @@
     padding: 0 57px 0 0;
     width: 560px;
     flex-shrink: 0;
+    @media(max-width: 1199px) {
+      width: 48%;
+    }
   }
   &__desc-item{
     &:not(:last-child) {

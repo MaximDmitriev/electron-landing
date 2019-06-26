@@ -4,5 +4,11 @@ const partnersSlider = new Swiper(document.querySelector('.swiper-container[data
   navigation: {
     nextEl: '.slider__next_partners',
     prevEl: '.slider__prev_partners',
-  }
+  },
+  breakpoints: {
+    1199: {
+      simulateTouch: true,
+      slidesPerView: 3
+      }
+    }
 })

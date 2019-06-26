@@ -11,9 +11,16 @@
     flex-direction: column;
     width: 50%;
     padding: 0 90px 0 0;
+    @media(max-width: 1199px) {
+      padding: 0 20px 0 0;
+    }
   }
   &__slider-main {
     width: 50%;
+  }
+  &__slide-main {
+    background: #fbfbfb;
+    height: 430px;;
   }
   &__slider-title {
     position: relative;
@@ -42,6 +49,10 @@
   &__desc-slider {
     width: 100%;
     margin-top: 45px;
+  }
+  &__desc-slide {
+    background: #fbfbfb;
+    height: 210px;
   }
   &__desc-title {
     font-weight: 500;

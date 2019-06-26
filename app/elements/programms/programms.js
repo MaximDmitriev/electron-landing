@@ -4,6 +4,14 @@ const progsSlider = new Swiper(document.querySelector('.swiper-container[data-sl
   navigation: {
     nextEl: '.slider__prev_progs',
     prevEl: '.slider__next_progs',
+  },
+  breakpoints: {
+  1199: {
+    slidesPerView: 2
+    }
+  },
+  on: {
+    init: () => showProgramm()
   }
 })
 

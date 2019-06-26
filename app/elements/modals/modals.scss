@@ -1,11 +1,8 @@
 .modals {
   display: none;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   position: fixed;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
   right: 0;
@@ -23,8 +20,8 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    animation: moveDown 0.6s ease;
-    animation-fill-mode: forwards;
+    // animation: moveDown 0.6s ease;
+    // animation-fill-mode: forwards;
     margin-bottom: 80px;
     transition: 0.6s;
   }
@@ -37,8 +34,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1100px;
-    padding: 75px 70px;
+    width: 1000px;
+    padding: 75px 50px;
     background: #ffffff;
     border-radius: 20px 20px 20px 105px;
     border: 1px solid #EEEEEE;
@@ -239,6 +236,42 @@
       box-shadow: none;
     }
   }
+  &__navigation {
+    position: absolute;
+    z-index: 2;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__prev-btn, &__next-btn {
+    cursor: pointer;
+    &:hover {
+      .modals__svg {
+        opacity: 1;
+        stroke-width: 3;
+      }
+    }
+  }
+  &__svg {
+    transition: 0.2s;
+    opacity: 0.7;
+    &_next {
+      transform: rotateZ(180deg);
+    }
+  }
+}
+
+.moveDown {
+  animation: moveDown 0.6s ease;
+  animation-fill-mode: forwards;
+}
+
+.moveUp {
+  animation: moveUp 0.6s ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes moveDown {
@@ -249,5 +282,15 @@
   100% {
     top: 80px;
     opacity: 1;
+  }
+}
+@keyframes moveUp {
+  0% {
+    top: 80px;
+    opacity: 1;
+  }
+  100% {
+    top: -1400px;
+    opacity: 0.6;
   }
 }

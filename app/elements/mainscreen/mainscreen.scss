@@ -1,38 +1,86 @@
 .mainscreen {
   overflow-x: hidden;
   padding: 40px 0 310px 0;
-  // height: 816px;
-  // padding-top: 40px;
   background: url('../mainscreen/img/main-bg.png') no-repeat left top;
   background-size: contain;
+  @media(max-width: 1199px) {
+    padding: 30px 0 200px 0;
+  }
+  @media(max-width: 991px) {
+    background-size: cover;
+    padding: 30px 0 150px 0;
+  }
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width: 991px) {
+      width: 100%;
+    }
   }
   &__nav {
-    padding: 0 105px;
+    display: flex;
+    align-items: center;
+    padding: 5px 90px;
+    flex-grow: 1;
+    @media(max-width: 1199px) {
+      padding: 5px 10px 5px 20px;
+    }
+    @media(max-width: 991px) {
+      display: none;
+    }
   }
   &__nav-link {
-    padding-left: 22px;
+    padding: 0 0 0 22px;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    transition: 0.4s;
+    flex-shrink: 0;
+    opacity: 0.8;
+    flex-wrap: nowrap;
     &:hover {
       text-decoration: none;
+      opacity: 1;
+      align-self: flex-start;
+      padding: 0 0 2px 22px;
+    }
+    @media(max-width: 1199px) {
+      padding: 0 0 0 13px;
+      &:hover {
+        align-self: flex-start;
+        padding: 0 0 2px 13px;
+      }
     }
   }
   &__contact-group {
+    user-select: none;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     cursor: pointer;
-
     background: rgba(#FFFFFF, 1);
     padding: 5px 20px;
     border-radius: 20px;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.18);
     border-radius: 24.5px 24.5px 24.5px 105px;
+    transition: 0.2s;
+    &:hover {
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.18);
+    }
+    &:active {
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.18);
+    }
+    @media(max-width: 991px) {
+      margin-left: auto; //TODO
+      background: transparent;
+      box-shadow: none;
+      border-radius: 50px;
+      transition: 0.4s;
+      &:hover {
+        box-shadow: none;
+      }
+    }
   }
   &__tel {
     display: flex;
@@ -44,6 +92,13 @@
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    @media(max-width: 1199px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @media(max-width: 991px) {
+      color: #FFFFFF;
+    }
   }
   &__contact-img {
     display: flex;
@@ -60,6 +115,9 @@
     font-size: 14px;
     line-height: 16px;
     border-bottom: 1px dotted $main-color;
+    @media(max-width: 991px) {
+      display: none;
+    }
   }
 
   &__content {
@@ -68,11 +126,16 @@
     width: 100%;
   }
   &__content-text {
-    // width: 61%;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     padding-top: 110px;
+    @media(max-width: 1199px) {
+      padding-top: 80px;
+    }
+    @media(max-width: 991px) {
+      padding-top: 60px;
+    }
   }
   &__welcome {
     display: flex;
@@ -89,6 +152,10 @@
     font-size: 34px;
     line-height: 48px;
     color: #FFFFFF;
+    @media(max-width: 1199px) {
+      font-size: 28px;
+      line-height: 39px;
+    }
   }
   &__desc-list {
     margin-bottom: 75px;
@@ -131,20 +198,16 @@
     transition: 0.4s;
     &:hover {
       background: #FFFFFF;
-
-      // box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
       border: 2px solid transparent; 
       color: $main-color;
     }
-    // &:active {
-    //   background: #FFFFFF;
-    //   // background: red;
-    //   border: none;
-    //   // border: 2px solid rgba(#FFFFFF, 0); 
-    //   // border: none;
-    //   // box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.08);
-    //   // border-radius: 22.4583px 22.4583px 22.4583px 105px;
-    // }
+    @media(max-width: 991px) {
+      &:hover {
+        color: #FFFFFF;
+        background: transparent;
+        border: 2px solid rgba(#FFFFFF, 1);
+      }
+    }
   }
 
   &__content-view {
@@ -153,16 +216,23 @@
     background-size: cover;
     height: 604px;
     width: 666px;
-    top: 0;
+    top: 34px;
     right: -95px;
-    // width: 39%;
-    // flex-shrink: 0;
-    // margin-right: -140px;
+    @media(max-width: 1199px) {
+      height: 504px;
+      width: 566px;
+      top: 90px;
+      right: -65px;
+    }
+    @media(max-width: 991px) {
+      height: 404px;
+      width: 466px;
+      top: 140px;
+      right: -45px;
+    }
   }
   &__img {
     position: absolute;
-    // object-fit: cover;
-    // object-position: left;
     height: 603px;
 
   }

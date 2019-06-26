@@ -4,7 +4,7 @@ const princsMainSlider = new Swiper(document.querySelector('.swiper-container[da
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   simulateTouch: false,
-  effect: 'slide'
+  effect: 'fade'
 })
 
 const princsDescSlider = new Swiper(document.querySelector('.swiper-container[data-slider="princs-desc"]'), {
@@ -13,7 +13,7 @@ const princsDescSlider = new Swiper(document.querySelector('.swiper-container[da
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   simulateTouch: false,
-  effect: 'slide',
+  effect: 'fade',
   thumbs: {
     swiper: princsMainSlider
   }

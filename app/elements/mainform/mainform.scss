@@ -30,6 +30,9 @@
     border-radius: 20px 20px 20px 105px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    @media(max-width: 1199px) {
+      margin: 0 0 0 40px;
+    }
   }
   &__subtitle {
     font-weight: 900;
