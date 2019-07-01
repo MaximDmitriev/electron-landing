@@ -138,6 +138,15 @@ input {
   &_principles {
     top: 30px;
   }
+  @media(max-width: 991px) {
+    background: linear-gradient(270deg, #FFB718 0%, #FD900A 100%);
+    .icon-slider-arrow {
+      fill: #FFFFFF;
+    }
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 .slider__next {
   right: -35px;
