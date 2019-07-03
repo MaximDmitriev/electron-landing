@@ -28,11 +28,23 @@
     transition: 0.4s;
     &:hover {
       box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.08);
+      @media(max-width: 991px) {
+        box-shadow: none;
+      }
+    }
+    @media(max-width: 991px) {
+      width: 280px;
+      height: 490px;
+      padding: 38px 25px 58px 25px;
     }
   }
   &__card-view {
     width: 228px;
     height: 217px;
+    @media(max-width: 991px) {
+      width: 200px;
+      height: 190px;
+    }
   }
   &__card-img {
     object-fit: cover;
@@ -73,6 +85,11 @@
       color: #FFFFFF;
       background: #97CC35;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      @media(max-width: 991px) {
+        box-shadow: none;
+        color: #97CC35;
+        background: #FFFFFF;
+      }
     }
     &:active {
       box-shadow: none;

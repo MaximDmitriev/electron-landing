@@ -153,6 +153,9 @@ input {
   @media(max-width: 1400px) {
     right: -15px;
   }
+  @media(max-width: 991px) {
+    right: 15px;
+  }
   &_principles {
     right: -60px;
   }
@@ -161,6 +164,9 @@ input {
   left: -35px;
   @media(max-width: 1400px) {
     left: -15px;
+  }
+  @media(max-width: 991px) {
+    left: 15px;
   }
   &_principles {
     left: -60px;

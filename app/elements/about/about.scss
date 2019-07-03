@@ -3,12 +3,23 @@
   align-items: center;
   margin-top: -50px;
   padding: 0 0 50px 0;
+  &__wrap {
+    @media(max-width: 991px) {
+      align-items: center;
+    }
+  }
   &__title {
     align-self: flex-start;
     margin-bottom: 30px;
+    @media(max-width: 991px) {
+      align-self: center;
+    }
   }
   &__content {
     display: flex;
+    @media(max-width: 991px) {
+      flex-wrap: wrap;
+    }
   }
   &__desc {
     // font-weight: 500;
@@ -20,10 +31,17 @@
     @media(max-width: 1199px) {
       width: 48%;
     }
+    @media(max-width: 991px) {
+      width: 100%;
+      padding: 0;
+    }
   }
   &__desc-item{
     &:not(:last-child) {
       margin-bottom: 15px;
+    }
+    @media(max-width: 991px) {
+      text-align: center;
     }
   }
   &__devider {
@@ -34,6 +52,9 @@
     background: #FFFFFF;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.04);
     border-radius: 50px;
+    @media(max-width: 991px) {
+      margin: 30px 0 0 20px;
+    }
   }
   &__devider-point {
     position: absolute;
@@ -60,6 +81,9 @@
   }
   &__missions {
     padding-left: 35px;
+    @media(max-width: 991px) {
+      width: 90%;
+    }
   }
   &__missions-title {
     margin: 25px 0;
@@ -80,6 +104,9 @@
     width: 100%;
     justify-content: center;
     margin-top: 60px;
+    @media(max-width: 991px) {
+      width: 75%;
+    }
   }
   &__quote-wrap {
     position: relative;
