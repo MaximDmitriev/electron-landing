@@ -95,9 +95,9 @@ input {
     width: 768px;
     padding: 0 15px;
   }
-  // @media(max-width: 767px) {
-  //   width: 576px;
-  // }
+  @media(max-width: 767px) {
+    width: 576px;
+  }
   // @media(max-width: 575px) {
   //   width: 100%;
   // }

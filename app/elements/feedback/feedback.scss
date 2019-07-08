@@ -74,6 +74,9 @@
     @media(max-width: 1199px) {
       width: 880px;
     }
+    @media(max-width: 991px) {
+      width: 700px;
+    }
   }
   &__text {
     color: $text-color;

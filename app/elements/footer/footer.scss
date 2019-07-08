@@ -4,6 +4,10 @@
   background-size: contain;
   background-position-x: right;
   background-position-y: bottom;
+  @media(max-width: 991px) {
+    background-size: cover;
+    height: 250px;
+  }
   &__wrap {
     flex-direction: row;
     justify-content: flex-end;
@@ -13,6 +17,12 @@
     }
     @media(max-width: 1199px) {
       padding-top: 190px;
+    }
+    @media(max-width: 991px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
     }
   }
   &__nav {
@@ -29,6 +39,9 @@
       margin-right: 60px;
       @media(max-width: 1199px) {
         margin-right: 20px;
+      }
+      @media(max-width: 991px) {
+        margin-right: 60px;
       }
     }
   }
@@ -50,6 +63,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media(max-width: 991px) {
+      flex-direction: row-reverse;
+      margin-top: 20px;
+    }
   }
   &__callback-phone {
     font-weight: bold;
@@ -67,6 +84,13 @@
     &:hover {
       margin-top: -3px;
       padding-bottom: 3px;
+      @media(max-width: 991px) {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    @media(max-width: 991px) {
+      margin-left: 40px;
     }
   }
   &__callback-text {
@@ -88,6 +112,12 @@
     &:hover {
       transition: 0.4s;
       stroke-width: 2;
+    }
+  }
+  &__logo-svg {
+    display: block;
+    @media(max-width: 991px) {
+      display: none;
     }
   }
 }

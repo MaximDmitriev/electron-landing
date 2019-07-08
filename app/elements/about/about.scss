@@ -132,6 +132,11 @@
       top: -30px;
       background: url('../about/img/comma.svg') no-repeat center;
       background-size: cover;
+      @media(max-width: 991px) {
+        width: 50px;
+        height: 42px;
+        left: -75px;
+      }
     }
     &::after {
       content: '';
@@ -143,6 +148,11 @@
       background: url('../about/img/comma.svg') no-repeat center;
       background-size: cover;
       transform: rotateZ(180deg);
+      @media(max-width: 991px) {
+        width: 50px;
+        height: 42px;
+        right: -75px;
+      }
     }
   }
 }

@@ -25,6 +25,13 @@ const mainSlider = new Swiper(document.querySelector('.swiper-container[data-sli
   // effect: 'slide',
   thumbs: {
     swiper: mainSliderUp
-  }
+  },
+  // breakpoints: {
+  //   992: {
+  //     thumbs: {
+  //       swiper: ''
+  //     },
+  //   },
+  // }
 })
 
