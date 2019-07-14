@@ -79,6 +79,9 @@ input {
       font-size: 28px;
       line-height: 36px;
     }
+    @media(max-width: 767px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -156,6 +159,9 @@ input {
   @media(max-width: 991px) {
     right: 15px;
   }
+  @media(max-width: 767px) {
+    right: 40px;
+  }
   &_principles {
     right: -60px;
   }
@@ -167,6 +173,9 @@ input {
   }
   @media(max-width: 991px) {
     left: 15px;
+  }
+  @media(max-width: 767px) {
+    left: 40px;
   }
   &_principles {
     left: -60px;

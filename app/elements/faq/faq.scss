@@ -89,8 +89,12 @@
       text-align: center;
       flex-grow: 1;
     }
+    @media(max-width: 767px) {
+      font-size: 18px;
+    }
   }
   &__close {
+    flex-shrink: 0;
     transform: rotateZ(-90deg);
   }
   &__list-answer {
@@ -101,6 +105,9 @@
     font-size: 18px;
     transition: 0.4s;
     opacity: 0;
+    @media(max-width: 767px) {
+      font-size: 16px;
+    }
   }
   &__list-string {
     &:not(:first-child) {

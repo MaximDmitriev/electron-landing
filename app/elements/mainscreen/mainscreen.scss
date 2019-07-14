@@ -156,6 +156,9 @@
       font-size: 28px;
       line-height: 39px;
     }
+    @media(max-width: 767px) {
+      font-size: 24px;
+    }
   }
   &__desc-list {
     margin-bottom: 75px;
@@ -180,6 +183,9 @@
     font-size: 18px;
     line-height: 25px;
     color: #FFFFFF;
+    @media(max-width: 767px) {
+      font-size: 16px;
+    }
   }
   &__btn {
     display: flex;
@@ -208,6 +214,11 @@
         border: 2px solid rgba(#FFFFFF, 1);
       }
     }
+    @media(max-width: 767px) {
+      width: 263px;
+      height: 42px;
+      font-size: 16px;
+    }
   }
 
   &__content-view {
@@ -230,10 +241,18 @@
       top: 140px;
       right: -45px;
     }
+    @media(max-width: 767px) {
+      height: 300px;
+      width: 280px;
+      top: 150px;
+      right: -28px;
+    }
   }
   &__img {
     position: absolute;
     height: 603px;
-
+    @media(max-width: 767px) {
+      height: 300px;
+    }
   }
 }

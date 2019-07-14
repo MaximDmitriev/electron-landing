@@ -56,6 +56,10 @@
         width: 710px;
         height: 710px;
       }
+      @media(max-width: 767px) {
+        width: 550px;
+        height: 550px;
+      }
     }
     &_second {
       width: 826px;
@@ -70,6 +74,11 @@
         height: 710px;
         border-color: transparent;
       }
+      @media(max-width: 767px) {
+        width: 450px;
+        height: 450px;
+        border: 2px solid rgba(218, 218, 218, 0.5);
+      }
     }
     &_third {
       width: 626px;
@@ -82,6 +91,10 @@
       @media(max-width: 991px) {
         width: 610px;
         height: 610px;
+      }
+      @media(max-width: 767px) {
+        width: 350px;
+        height: 350px;
       }
     }
     &_main {
@@ -98,6 +111,11 @@
         height: 520px;
         justify-content: space-between;
       }
+      @media(max-width: 767px) {
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+      }
     }
   }
   &__nav {
@@ -111,6 +129,9 @@
       width: 140%;
       display: flex;
       justify-content: space-between;
+    }
+    @media(max-width: 767px) {
+      top: 107px;
     }
   }
   &__label {
@@ -169,11 +190,17 @@
         fill: #FFFFFF;
         stroke: #FFFFFF;
       }
+      // @media(max-width: 767px) {
+      //   display: flex;
+      // }
     }
     @media(max-width: 991px) {
       position: relative;
       opacity: 0;
     }
+    // @media(max-width: 767px) {
+    //   display: none;
+    // }
     &_children {
       top: 0;
       transform: translateY(-50%);
@@ -298,6 +325,11 @@
     span {
       color: #909090;
     }
+    @media(max-width: 767px) {
+      font-size: 20px;
+      line-height: 22px;
+      bottom: -60px !important;
+    }
   }
   &__circle-inner {
     // z-index: 1;
@@ -363,6 +395,9 @@
       @media(max-width: 991px) {
         width: 630px;
       }
+      @media(max-width: 767px) {
+        width: 476px;
+      }
     }
     &::after {
       content: '';
@@ -395,6 +430,11 @@
         border-left: #FFFFFF;
         border-bottom: #FFFFFF;
       }
+      @media(max-width: 767px) {
+        width: 30px;
+        height: 30px;
+        top: -16px;
+      }
     }
     @media(max-width: 1199px) {
       border-radius: 20px;
@@ -406,6 +446,9 @@
       top: 220px;
       left: 50%;
       transform: translateX(-50%);
+    }
+    @media(max-width: 767px) {
+      top: 190px;
     }
   }
   &__popup-text {
@@ -420,6 +463,9 @@
       height: initial;
       width: 100%;
     }
+    @media(max-width: 767px) {
+      max-height: 250px;
+    }
   }
   &__popup-text-item {
     font-size: 14px;
@@ -428,6 +474,9 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+    // @media(max-width: 767px) {
+    //   font-size: 13px;
+    // }
   }
   &__overlay {
     position: absolute;

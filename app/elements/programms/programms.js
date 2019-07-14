@@ -8,6 +8,9 @@ const progsSlider = new Swiper(document.querySelector('.swiper-container[data-sl
   breakpoints: {
   1199: {
     slidesPerView: 2
+    },
+  767: {
+    slidesPerView: 1
     }
   },
   on: {
