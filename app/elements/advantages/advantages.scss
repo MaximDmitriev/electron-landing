@@ -26,6 +26,9 @@
     // margin-top: -40px;
     padding: 0 0 250px 0;
   }
+  @media(max-width: 575px) {
+    padding: 70px 0 370px 0;
+  }
   &__title {
     position: absolute;
     z-index: 2;
@@ -36,6 +39,9 @@
     user-select: none;
     @media(max-width: 991px) {
       top: 80px;
+    }
+    @media(max-width: 575px) {
+      top: 30px;
     }
   }
   &__circle {
@@ -60,6 +66,10 @@
         width: 550px;
         height: 550px;
       }
+      @media(max-width: 575px) {
+        width: 300px;
+        height: 300px;
+      }
     }
     &_second {
       width: 826px;
@@ -79,6 +89,10 @@
         height: 450px;
         border: 2px solid rgba(218, 218, 218, 0.5);
       }
+      @media(max-width: 575px) {
+        width: 260px;
+        height: 260px;
+      }
     }
     &_third {
       width: 626px;
@@ -96,6 +110,10 @@
         width: 350px;
         height: 350px;
       }
+      @media(max-width: 575px) {
+        width: 220px;
+        height: 220px;
+      }
     }
     &_main {
       position: relative;
@@ -112,8 +130,8 @@
         justify-content: space-between;
       }
       @media(max-width: 767px) {
-        width: 250px;
-        height: 250px;
+        width: 180px;
+        height: 180px;
         justify-content: center;
       }
     }
@@ -132,6 +150,9 @@
     }
     @media(max-width: 767px) {
       top: 107px;
+    }
+    @media(max-width: 575px) {
+      top: 70px;
     }
   }
   &__label {
@@ -398,6 +419,9 @@
       @media(max-width: 767px) {
         width: 476px;
       }
+      @media(max-width: 575px) {
+        width: 300px;
+      }
     }
     &::after {
       content: '';
@@ -449,6 +473,9 @@
     }
     @media(max-width: 767px) {
       top: 190px;
+    }
+    @media(max-width: 575px) {
+      width: 300px;
     }
   }
   &__popup-text {

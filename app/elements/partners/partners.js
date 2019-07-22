@@ -9,6 +9,12 @@ const partnersSlider = new Swiper(document.querySelector('.swiper-container[data
     1199: {
       simulateTouch: true,
       slidesPerView: 3
-      }
+      },
+    767: {
+      slidesPerView: 2
+      },
+    575: {
+      slidesPerView: 1
+    }
     }
 })

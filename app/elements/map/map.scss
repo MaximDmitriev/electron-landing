@@ -1,5 +1,5 @@
 .map {
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
   &__wrap {
     align-items: center;
   }
@@ -7,6 +7,9 @@
     margin-top: 20px;
     font-size: 18px;
     color: #BFBFBF;
+    @media(max-width: 575px) {
+      text-align: center;
+    }
   }
   &__switcher {
     display: flex;
@@ -72,6 +75,10 @@
       width: 550px;
       height: 400px;
     }
+    @media(max-width: 575px) {
+      width: 300px;
+      border-radius: 20px;
+    }
     ///
     img {
       width: 100%;
@@ -102,6 +109,11 @@
       width: 550px;
       padding: 40px 35px 50px 35px;
     }
+    @media(max-width: 575px) {
+      width: 300px;
+      border-radius: 20px 20px 20px 70px;
+      padding: 40px 35px 20px 35px;
+    }
   }
   &__list-item {
     display: flex;
@@ -112,6 +124,9 @@
     &:last-child {
       padding-top: 24px;
       border-top: 2px solid #EEEEEE;
+    }
+    @media(max-width: 575px) {
+      flex-direction: column;
     }
   }
   &__address {
@@ -158,6 +173,12 @@
       font-size: 14px;
       width: 240px;
       height: 40px;
+    }
+    @media(max-width: 575px) {
+      margin-top: 20px;
+    }
+    @media(max-width: 575px) {
+      border-radius: 25px 25px 25px 50px;
     }
   }
   &__content {

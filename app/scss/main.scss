@@ -14,6 +14,9 @@ body {
   font-size: $base-font-size;
   min-width: 320px;
   background: #FBFBFB;
+  @media(max-width: 575px) {
+    font-size: 14px;
+  }
 }
 div {
   &:active {
@@ -82,6 +85,10 @@ input {
     @media(max-width: 767px) {
       font-size: 24px;
     }
+    @media(max-width: 575px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 }
 
@@ -101,9 +108,9 @@ input {
   @media(max-width: 767px) {
     width: 576px;
   }
-  // @media(max-width: 575px) {
-  //   width: 100%;
-  // }
+  @media(max-width: 575px) {
+    width: 100%;
+  }
 }
 .slider__next, .slider__prev {
   display: flex;
@@ -162,8 +169,18 @@ input {
   @media(max-width: 767px) {
     right: 40px;
   }
+  @media(max-width: 575px) {
+    top: initial;
+    bottom: -20px;
+    right: 70px;
+  }
   &_principles {
     right: -60px;
+    @media(max-width: 575px) {
+      right: 35px;
+      top: initial;
+      bottom: -40px;
+    }
   }
 }
 .slider__prev {
@@ -177,8 +194,18 @@ input {
   @media(max-width: 767px) {
     left: 40px;
   }
+  @media(max-width: 575px) {
+    top: initial;
+    bottom: -20px;
+    left: 70px;
+  }
   &_principles {
     left: -60px;
+    @media(max-width: 575px) {
+      left: 35px;
+      top: initial;
+      bottom: -40px;
+    }
   }
 }
 

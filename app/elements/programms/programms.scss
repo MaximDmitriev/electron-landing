@@ -11,12 +11,17 @@
     align-items: center;
     margin-top: 55px;
     padding: 0 50px;
+    @media(max-width: 575px) {
+     padding: 0;
+     margin-top: 20px;
+    }
   }
   &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
     padding: 58px 25px;
     margin: 20px 0;
     width: 330px;
@@ -110,6 +115,7 @@
   &__slide {
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
   }
   // &__next, &__prev {
   //   display: flex;

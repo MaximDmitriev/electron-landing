@@ -77,6 +77,11 @@
     @media(max-width: 991px) {
       width: 700px;
     }
+    @media(max-width: 767px) {
+      width: 500px;
+      padding: 25px 20px 35px 35px;
+      border-radius: 20px 20px 20px 65px;
+    }
   }
   &__text {
     color: $text-color;

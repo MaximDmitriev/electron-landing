@@ -28,6 +28,10 @@
       font-size: 20px;
       margin-top: 40px;
     }
+    @media(max-width: 767px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
   }
   &__text {
     margin-top: 20px;
@@ -36,6 +40,10 @@
     @media(max-width: 991px) {
       text-align: center;
       font-size: 20px;
+    }
+    @media(max-width: 767px) {
+      font-size: 16px;
+      line-height: 26px;
     }
   }
   &__form {

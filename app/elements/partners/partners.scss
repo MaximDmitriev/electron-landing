@@ -20,6 +20,12 @@
       opacity: 1;
     }
   }
+  &__img {
+    max-width: initial;
+    @media(max-width: 767px) {
+      max-width: 200px;
+    }
+  }
   &__nav {
     display: none;
     justify-content: center;
