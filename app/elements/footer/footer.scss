@@ -8,6 +8,9 @@
     background-size: cover;
     height: 250px;
   }
+  @media(max-width: 575px) {
+    height: 380px;
+  }
   &__wrap {
     flex-direction: row;
     justify-content: flex-end;
@@ -31,6 +34,9 @@
     @media(max-width: 1199px) {
       margin: 0 50px;
     }
+    @media(max-width: 575px) {
+      flex-direction: column;
+    }
   }
   &__nav-col {
     display: flex;
@@ -43,6 +49,12 @@
       @media(max-width: 991px) {
         margin-right: 60px;
       }
+      @media(max-width: 575px) {
+        margin-right: 0;
+      }
+    }
+    @media(max-width: 575px) {
+      align-items: center;
     }
   }
   &__nav-link {
@@ -53,10 +65,16 @@
     transition: 0.2s;
     &:not(:first-child) {
       margin-top: 9px;
+      @media(max-width: 575px) {
+        margin-top: 5px;
+      }
     }
     &:hover {
       text-decoration: none;
       opacity: 1;
+    }
+    @media(max-width: 575px) {
+      margin-top: 5px;
     }
   }
   &__contacts {
@@ -66,6 +84,10 @@
     @media(max-width: 991px) {
       flex-direction: row-reverse;
       margin-top: 20px;
+    }
+    @media(max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
     }
   }
   &__callback-phone {
@@ -91,6 +113,10 @@
     }
     @media(max-width: 991px) {
       margin-left: 40px;
+    }
+    @media(max-width: 575px) {
+      margin-left: 0;
+      align-items: center;
     }
   }
   &__callback-text {

@@ -4,5 +4,6 @@ const feedbackSlider = new Swiper(document.querySelector('.swiper-container[data
   navigation: {
     nextEl: '.slider__next_feedback',
     prevEl: '.slider__prev_feedback',
-  }
+  },
+  autoHeight: true
 })

@@ -17,6 +17,9 @@
         display: none;
       }
     }
+    @media(max-width: 575px) {
+      line-height: 24px;
+    }
   }
   &__desc {
     margin-top: 60px;
@@ -31,6 +34,9 @@
     @media(max-width: 767px) {
       font-size: 16px;
       line-height: 26px;
+    }
+    @media(max-width: 575px) {
+      margin-top: 30px;
     }
   }
   &__text {
@@ -64,6 +70,11 @@
     @media(max-width: 991px) {
       margin: 40px 0 0 0;
     }
+    @media(max-width: 575px) {
+      width: 290px;
+      border-radius: 20px 20px 20px 60px;
+      padding: 30px 0;
+    }
   }
   &__subtitle {
     font-weight: 900;
@@ -93,6 +104,9 @@
         fill: #97CC35;
       }
     }
+    @media(max-width: 575px) {
+      width: 90%;
+    }
   }
   &__form-input {
     width: 90%;
@@ -116,6 +130,10 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    @media(max-width: 575px) {
+      width: 80%;
+      justify-content: center;
+    }
   }
   &__checkbox-real {
     display: none;
@@ -131,6 +149,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 21px;
     height: 21px;
     border-radius: 50%;
@@ -145,6 +164,9 @@
     font-size: 14px;
     color: #737373;
     user-select: none;
+    @media(max-width: 575px) {
+      margin: 0 5px 0 15px;
+    }
   }
   &__check-svg {
     fill: #ffffff;
@@ -172,6 +194,10 @@
       color: #FFFFFF;
       background: #97CC35;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    @media(max-width: 575px) {
+      width: 90%;
+      border-radius: 18px 18px 18px 40px;
     }
   }
 }

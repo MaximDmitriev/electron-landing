@@ -10,6 +10,9 @@
     height: 666px;
     background: url('../advantages/img/decor-gray-left.png') no-repeat left;
     background-size: cover;
+    @media(max-width: 575px) {
+      display: none;
+    }
   }
   &::after {
     content: '';
@@ -21,6 +24,9 @@
     height: 628px;
     background: url('../advantages/img/decor-gray-right.png') no-repeat right;
     background-size: cover;
+    @media(max-width: 575px) {
+      display: none;
+    }
   }
   @media(max-width: 991px) {
     // margin-top: -40px;
