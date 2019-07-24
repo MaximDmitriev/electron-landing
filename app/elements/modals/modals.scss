@@ -39,6 +39,18 @@
     background: #ffffff;
     border-radius: 20px 20px 20px 105px;
     border: 1px solid #EEEEEE;
+    @media(max-width: 1199px) {
+      width: 600px;
+    }
+    @media(max-width: 991px) {
+      width: 380px;
+      padding: 50px 30px;
+    }
+    @media(max-width: 575px) {
+      width: 250px;
+      padding: 40px 20px;
+      border-radius: 20px 20px 20px 60px;
+    }
   }
   &__close-btn {
     position: absolute;
@@ -65,11 +77,32 @@
   &__desc {
     display: flex;
     width: 100%;
+    @media(max-width: 1199px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
   &__title {
     font-weight: 900;
     font-size: 28px;
     color: $text-color;
+    br {
+      display: none;
+      @media(max-width: 1199px) {
+        display: block;
+      }
+    }
+    @media(max-width: 1199px) {
+      font-size: 26px;
+      text-align: center;
+      font-weight: 700;
+    }
+    @media(max-width: 991px) {
+      font-size: 22px;
+    }
+    @media(max-width: 575px) {
+      font-size: 18px;
+    }
   }
   &__text {
     display: flex;
@@ -81,12 +114,25 @@
     &:not(:first-child) {
       margin-top: 20px;
     }
+    @media(max-width: 1199px) {
+      font-size: 14px;
+    }
+    @media(max-width: 575px) {
+      // text-align: center;
+    }
   }
   &__lists {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 40px;
+    @media(max-width: 991px) {
+      flex-direction: column;
+      margin-top: 25px;
+    }
+    @media(max-width: 575px) {
+      margin-top: 15px;
+    }
   }
   &__list {
     display: flex;
@@ -100,6 +146,16 @@
     &:not(:first-child) {
       margin-top: 14px;
     }
+    @media(max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media(max-width: 991px) {
+      font-size: 15px;
+      margin-top: 12px;
+    }
+    @media(max-width: 575px) {
+      font-size: 14px;
+    }
   }
   &__circle {
     width: 10px;
@@ -111,9 +167,24 @@
   &__view {
     flex-shrink: 0;
     margin: 0 0 0 40px;
+    @media(max-width: 1199px) {
+      margin: 0 0 40px 0;
+    }
+    @media(max-width: 575px) {
+      margin: 0 0 25px 0;
+    }
   }
   &__img {
     width: 280px;
+    @media(max-width: 1199px) {
+      width: 240px;
+    }
+    @media(max-width: 991px) {
+      width: 200px;
+    }
+    @media(max-width: 575px) {
+      width: 170px;
+    }
   }
   &__advantages {
     display: flex;
@@ -122,6 +193,13 @@
     margin-top: 45px;
     padding-top: 45px;
     border-top: 2px solid #EEEEEE;
+    @media(max-width: 991px) {
+      flex-direction: column;
+      padding-top: 10px;
+    }
+    @media(max-width: 575px) {
+      padding-top: 0;
+    }
   }
   &__advantages-item {
     display: flex;
@@ -129,6 +207,13 @@
     align-items: center;
     flex-basis: 28%;
     flex-shrink: 0;
+    @media(max-width: 991px) {
+      flex-direction: row;
+      margin-top: 15px;
+    }
+    @media(max-width: 575px) {
+      flex-direction: column;
+    }
   }
   &__advantages-desc {
     margin-top: 19px;
@@ -144,16 +229,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-radius: 50%;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    @media(max-width: 991px) {
+      width: 70px;
+      height: 70px;
+      margin: 0 30px 0 0;
+    }
+    @media(max-width: 575px) {
+      margin: 0;
+    }
   }
   &__advantages-circle {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 60px;
     height: 60px;
     background: #FFFFFF;
@@ -173,6 +268,10 @@
       border-radius: inherit;
       background: linear-gradient(to right, #97CC35 0%, #66B161 100%);
     }
+    @media(max-width: 991px) {
+      width: 50px;
+      height: 50px;
+    }
   }
   &__result {
     display: flex;
@@ -181,11 +280,24 @@
     margin-top: 45px;
     padding-top: 45px;
     border-top: 2px solid #EEEEEE;
+    @media(max-width: 575px) {
+      padding-top: 20px;
+    }
   }
   &__result-title {
     font-weight: 900;
     font-size: 24px;
     color: $text-color;
+    @media(max-width: 1199px) {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    @media(max-width: 991px) {
+      font-size: 20px;
+    }
+    @media(max-width: 575px) {
+      font-size: 16px;
+    }
   }
   &__result-list {
     display: flex;
@@ -207,14 +319,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     border: 2px solid #FFB718;
     border-radius: 50%;
     margin-right: 30px;
+    @media(max-width: 1199px) {
+      height: 28px;
+      width: 28px;
+      margin-right: 15px;
+    }
+    @media(max-width: 575px) {
+      width: 24px;
+      height: 24px;
+      font-size: 15px;
+    }
   }
   &__result-text {
     font-weight: 500;
     font-size: 18px;
     color: $text-color;
+    @media(max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media(max-width: 991px) {
+      font-size: 15px;
+    }
+    @media(max-width: 575px) {
+      font-size: 14px;
+    }
   }
   &__btn {
     width: 312px;
@@ -235,6 +367,21 @@
     &:active {
       box-shadow: none;
     }
+    @media(max-width: 1199px) {
+      width: 270px;
+      margin-top: 50px;
+      &:hover {
+        color: #97CC35;
+        background: #FFFFFF;
+        box-shadow: none;
+      }
+    }
+    @media(max-width: 575px) {
+      width: 200px;
+      height: 38px;
+      border-radius: 18px 18px 18px 40px;
+      font-size: 12px;
+    }
   }
   &__navigation {
     position: absolute;
@@ -245,6 +392,15 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    @media(max-width: 991px) {
+      top: 300px;
+    }
+    @media(max-width: 991px) {
+      width: 90%;
+    }
+    @media(max-width: 575px) {
+      width: 95%;
+    }
   }
   &__prev-btn, &__next-btn {
     cursor: pointer;
@@ -258,6 +414,12 @@
   &__svg {
     transition: 0.2s;
     opacity: 0.7;
+    @media(max-width: 991px) {
+      width: 20px;
+    }
+    @media(max-width: 575px) {
+      width: 15px;
+    }
     &_next {
       transform: rotateZ(180deg);
     }
