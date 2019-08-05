@@ -5,6 +5,7 @@ const mainSliderUp = new Swiper(document.querySelector('.swiper-container[data-s
   watchSlidesVisibility: true,
   watchSlidesProgress: true,
   simulateTouch: false,
+  allowTouchMove: false
 })
 
 const mainSlider = new Swiper(document.querySelector('.swiper-container[data-slider="main"]'), {

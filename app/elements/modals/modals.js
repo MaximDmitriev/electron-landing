@@ -6,8 +6,8 @@ const showProgramm = () => {
   const onClose = () => {
     document.body.style.overflow = '';
     document.body.style.paddingRight = 'initial';
+    container.classList.remove('moveDown');
     setTimeout(() => {
-      container.classList.remove('moveDown');
       container.classList.add('moveUp');
       setTimeout(() => modals.style.display = 'none', 500);
     }, 0);
@@ -24,13 +24,17 @@ const showProgramm = () => {
     },
     on: {
       init: () => {
-        const closeBtn = document.querySelectorAll('.modals__close-btn');  
-        closeBtn.forEach((item) => {
-          item.addEventListener('click', onClose);
-        });
+        // const closeBtn = document.querySelectorAll('.modals__close-btn');  
+        // closeBtn.forEach((item) => {
+        //   item.addEventListener('click', onClose);
+        // });
       }
     }
   })
+  const closeBtn = document.querySelectorAll('.modals__close-btn');  
+  closeBtn.forEach((item) => {
+    item.addEventListener('click', onClose);
+  });
 
   window.addEventListener('keyup', (event) => {
     if (event.keyCode === 27) {
@@ -43,8 +47,8 @@ const showProgramm = () => {
       modals.style.display = 'block';
       document.body.style.overflow = 'hidden';
       document.body.style.paddingRight = scrollCalc() + 'px';
+      container.classList.remove('moveUp');
       setTimeout(() => {
-        container.classList.remove('moveUp');
         container.classList.add('moveDown');
         setTimeout(() => {
           const key = item.getAttribute('data-key');

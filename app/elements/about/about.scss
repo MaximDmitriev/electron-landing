@@ -140,11 +140,13 @@
     color: $text-color;
     @media(max-width: 767px) {
       height: 180px;
-      padding: 25px
+      padding: 25px;
+      border-radius: 20px 20px 20px 75px;
     }
     @media(max-width: 575px) {
       width: 100%;
       height: auto;
+      border-radius: 20px 20px 20px 55px;
     }
     &::before {
       content: '';

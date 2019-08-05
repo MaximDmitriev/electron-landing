@@ -22,4 +22,20 @@ const nav = () => {
   select(footerNavs, blocks);
 }
 
+const onShowPhone = () => {
+  const phoneIcon = document.querySelector('.callback-btn'),
+        footer = getComputedStyle(document.querySelector('.footer')),
+        mainform = getComputedStyle(document.querySelector('.mainform')),
+        mainscreen = getComputedStyle(document.querySelector('.mainscreen')).height.slice(0, -2);
+  
+  const endLine = +footer.height.slice(0, -2) + +mainform.height.slice(0, -2) + window.innerHeight;
+
+  console.log(endLine);
+  window.addEventListener('scroll', () => {
+    console.log('+', document.body.scrollHeight - window.pageYOffset, window.innerHeight);
+    window.pageYOffset > mainscreen && (document.body.scrollHeight - window.pageYOffset > endLine) ? phoneIcon.style.display = 'flex' : phoneIcon.style.display = 'none';
+  });
+}
+
 nav();
+onShowPhone();

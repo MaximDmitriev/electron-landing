@@ -30,6 +30,10 @@ const closePopups = () => {
     item.classList.add('off');
     iconsOpen[i].classList.remove('off');
     iconsClose[i].classList.add('off');
+    if (document.body.clientWidth >= 991) {
+      advInners[i].classList.remove('pulse');
+      advInners[i].classList.add('pulse');
+    }
     setTimeout(() => item.style.display = 'none', 200);
   });
 };
@@ -44,7 +48,11 @@ advInners.forEach((item, i) => {
         advPopups[i].classList.remove('off');
         iconsOpen[i].classList.toggle('off');
         iconsClose[i].classList.toggle('off');
-        setTimeout(() => advPopups[i].style.display = 'flex', 200);
+        setTimeout(() => {
+          advPopups[i].style.display = 'flex';
+          item.classList.remove('pulse');
+        
+        }, 200);
       }
       else {
         closePopups();
@@ -144,7 +152,7 @@ btnRight.addEventListener('click', moveNextMob);
 
 const mobView = inputArr => {
   arr = [...inputArr];
-
+  advInners.forEach(item => item.classList.remove('pulse'));
   closePopups();
   if (document.body.clientWidth > 767 && document.body.clientWidth < 992) {
     arr.forEach((item, i) => {

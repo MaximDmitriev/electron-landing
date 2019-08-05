@@ -1,4 +1,5 @@
 window.addEventListener('DOMContentLoaded', function () {
+    // document.querySelector('.preloader').remove();
     const scrollCalc = () => {
         const div = document.createElement('div');
         div.style.overflowY = 'scroll';

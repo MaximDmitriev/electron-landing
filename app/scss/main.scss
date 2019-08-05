@@ -7,7 +7,38 @@
   margin: 0;
   padding: 0;
 }
+// .preloader {
+//   position: fixed;
+//   display: flex;
+//   justify-content: center;
+//   z-index: 100;
+//   width: 100%;
+//   height: 100%;
+//   background: #97CC35;
+//   overflow: hidden;
+//   &__wrapper {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 200px;
+//     height: 200px;
+//     // margin: 100px auto;
+//     margin-top: 100px;
+//   }
+//   &__loading {
 
+//   }
+//   &__txt {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     color: #ffffff;
+//     text-transform: uppercase;
+//     font-size: 30px;
+//   }
+// }
 body {
   // position: relative;
   font-family: $base-font;
@@ -209,8 +240,25 @@ input {
   }
 }
 
+
+.pulse {
+  animation: pulse 2s ease infinite;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(125, 200, 30, 0.8);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(125, 200, 30, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(125, 200, 30, 0);
+  }
+}
+
 @import "icons";
 
+// @import "../elements/preloader/preloader";
 @import "../elements/mainscreen/mainscreen";
 @import "../elements/advantages/advantages";
 @import "../elements/about/about";

@@ -1,0 +1,38 @@
+body {
+  background: red;
+}
+.preloader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: #97CC35;
+    overflow: hidden;
+}
+.preloader__wrapper {
+    /* position: relative; */
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    /* margin: 10px auto; */
+}
+.preloader__loading {
+
+}
+.preloader__txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+}

@@ -1,5 +1,6 @@
 mixin head(title, description, keywords)
     head
+        //- link(rel="stylesheet", href="css/1.css")
         meta(charset="utf-8")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport", content="initial-scale=1.0, width=device-width")
@@ -12,6 +13,8 @@ mixin head(title, description, keywords)
         meta(property="og:image" content="img/og-image.jpg")
         meta(property="og:locale" content="ru_RU")
         meta(property="og:url" content="http://yoursite.ru")
+        style
+            include ../preloader/preloader.css
         link(rel="image_src" href="img/og-image.jpg")
         link(href="css/libs.min.css" rel="stylesheet" type="text/css")
         link(href="css/style.css" rel="stylesheet" type="text/css")
