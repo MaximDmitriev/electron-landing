@@ -1,27 +1,36 @@
 .mainscreen.section
   ._wrap.wrap
-    .callback-btn.pulse
-      +svg('call')
+    .callback-btn(data-role="callback").pulse
+      +svg('call', 'call-btn-svg')
     header._header
       ._logo
         +svg('main-logo')
       nav._nav
         a(href="#" data-link="about")._nav-link О нас
-        a(href="#" data-link="program")._nav-link Курсы
-        a(href="#" data-link="prepod")._nav-link Преподавания
+        a(href="#" data-link="program")._nav-link Программа
+        a(href="#" data-link="prepod")._nav-link Обучение
         a(href="#" data-link="life")._nav-link Занятия
         a(href="#" data-link="feedback")._nav-link Отзывы
         a(href="#" data-link="faq")._nav-link FAQ
         a(href="#" data-link="contacts")._nav-link Контакты
-      ._contact-group
+      ._contact-group(data-role="callback")
         ._tel
           ._phone +7 (977) 177-94-17
           ._contact-img
             img(src="img/phone2.svg", alt="phone")
-          //- ._img
-          //-   +svg('phone')
+        ._callback перезвоните мне
+    ._header-mobile
+      ._logo
+        +svg('main-logo', 'mainscreen__header-mob-svg')
+      ._contact-group(data-role="callback")
+        ._tel
+          ._phone +7 (977) 177-94-17
+          ._contact-img
+            img(src="img/phone2.svg", alt="phone")
         ._callback перезвоните мне
       ._menu-btn
+        //- +svg('menu-mob')
+        +svg('menu-mobile')
     ._content
       ._content-text
         ._welcome Добро пожаловать в<br> РОББО-КЛУБ&nbsp;
@@ -37,6 +46,6 @@
           ._desc-item
             ._desc-circle
             ._desc-text Готовим к профессиям будущего
-        button._btn Записаться на пробный урок
+        button(data-role="callback")._btn Записаться на пробный урок
       ._content-view
         //- img(src="img/main-teacher.png", alt="people")._img

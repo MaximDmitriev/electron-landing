@@ -11,14 +11,17 @@
       ._form-note.
           Пожалуйста, заполните форму, <br>и наш менеджер с Вами свяжется
       label(for="mainform-name")._form-label
+        .warning-msg Введите имя
         input(type="text" placeholder="Ваше имя")._form-input#mainform-name
         +svg('man', 'mainform__form-svg')
       label(for="mainform-phone")._form-label
+        .warning-msg Введите корректный номер
         input(type="text" placeholder="+7(999)111-22-33")._form-input#mainform-phone
         +svg('phone-call', 'mainform__form-svg')
       label(for="mainform-check")._checkbox
         input(type="checkbox" name="mainform-check" checked)._checkbox-real#mainform-check
         ._checkbox-fake
             +svg('checked', 'mainform__check-svg')
-        ._checkbox-text Согласие на обработку персональных данных
+        ._checkbox-text Согласие на обработку персональных 
+          a(href="http://robboclub.ru/agreement/" target="_blank") данных
       button._btn Получить консультацию

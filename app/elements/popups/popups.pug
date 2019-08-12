@@ -1,0 +1,23 @@
+.popups.section
+  ._wrap.wrap
+    ._form
+      ._close-btn
+        +svg('return-adv', 'modals__close-svg')
+      h3._subtitle Оставьте заявку
+      ._form-note.
+          Пожалуйста, заполните форму, <br>и наш менеджер с Вами свяжется
+      label(for="mainform-name2")._form-label
+        .warning-msg Введите имя
+        input(type="text" placeholder="Ваше имя")._form-input#mainform-name2
+        +svg('man', 'mainform__form-svg')
+      label(for="mainform-phone2")._form-label
+        .warning-msg Введите корректный номер
+        input(type="text" placeholder="+7(999)111-22-33")._form-input#mainform-phone2
+        +svg('phone-call', 'mainform__form-svg')
+      label(for="mainform-check1")._checkbox
+        input(type="checkbox" name="mainform-check1" checked)._checkbox-real#mainform-check1
+        ._checkbox-fake
+            +svg('checked', 'popups__check-svg')
+        ._checkbox-text Согласие на обработку персональных 
+          a(href="http://robboclub.ru/agreement/" target="_blank") данных
+      button._btn Получить консультацию

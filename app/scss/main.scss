@@ -239,7 +239,21 @@ input {
     }
   }
 }
-
+.warning-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border: 2px solid red;
+  border-radius: 20px;
+  background-color: #fff;
+  transition: 0.2s;
+  opacity: 0;
+}
 
 .pulse {
   animation: pulse 2s ease infinite;
@@ -274,3 +288,5 @@ input {
 @import "../elements/mainform/mainform";
 @import "../elements/footer/footer";
 @import "../elements/modals/modals";
+@import "../elements/popups/popups";
+@import "../elements/mobmenu/menu";
